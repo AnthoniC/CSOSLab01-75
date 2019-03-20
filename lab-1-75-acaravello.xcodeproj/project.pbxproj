@@ -10,6 +10,7 @@
 		96F8367C223F33D600766F7F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 96F8367B223F33D600766F7F /* main.c */; };
 		96FE2ED8224257E300F0234F /* DoublyLinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = 96FE2ED7224257E300F0234F /* DoublyLinkedList.c */; };
 		96FE2EDB224257F200F0234F /* CircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 96FE2EDA224257F200F0234F /* CircularBuffer.c */; };
+		96FE2EDE224291C200F0234F /* tests.c in Sources */ = {isa = PBXBuildFile; fileRef = 96FE2EDD224291C200F0234F /* tests.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,8 @@
 		96FE2ED7224257E300F0234F /* DoublyLinkedList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DoublyLinkedList.c; sourceTree = "<group>"; };
 		96FE2ED9224257F200F0234F /* CircularBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularBuffer.h; sourceTree = "<group>"; };
 		96FE2EDA224257F200F0234F /* CircularBuffer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CircularBuffer.c; sourceTree = "<group>"; };
+		96FE2EDC224291C200F0234F /* tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tests.h; sourceTree = "<group>"; };
+		96FE2EDD224291C200F0234F /* tests.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tests.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,8 @@
 				96FE2ED7224257E300F0234F /* DoublyLinkedList.c */,
 				96FE2ED9224257F200F0234F /* CircularBuffer.h */,
 				96FE2EDA224257F200F0234F /* CircularBuffer.c */,
+				96FE2EDC224291C200F0234F /* tests.h */,
+				96FE2EDD224291C200F0234F /* tests.c */,
 			);
 			path = "lab-1-75-acaravello";
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 				96F8367C223F33D600766F7F /* main.c in Sources */,
 				96FE2EDB224257F200F0234F /* CircularBuffer.c in Sources */,
 				96FE2ED8224257E300F0234F /* DoublyLinkedList.c in Sources */,
+				96FE2EDE224291C200F0234F /* tests.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

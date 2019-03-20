@@ -11,4 +11,22 @@
 
 #include <stdio.h>
 
+typedef struct circular_buffer_node{
+    int value;
+    struct circular_buffer_node* next;
+    struct circular_buffer_node* previous;
+} circular_buffer_node;
+
+typedef struct circular_buffer{
+    int size;
+    int occupied;
+    circular_buffer_node* head;
+    circular_buffer_node* tail;
+} circular_buffer;
+
+circular_buffer* create_cl(int size);
+int push_cl(int value);
+int pop_cl(void);
+int head_cl(void);
+
 #endif /* CircularBuffer_h */
