@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		96F8367C223F33D600766F7F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 96F8367B223F33D600766F7F /* main.c */; };
+		96FE2ED8224257E300F0234F /* DoublyLinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = 96FE2ED7224257E300F0234F /* DoublyLinkedList.c */; };
+		96FE2EDB224257F200F0234F /* CircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 96FE2EDA224257F200F0234F /* CircularBuffer.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +28,10 @@
 		96F83678223F33D600766F7F /* lab-1-75-acaravello */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "lab-1-75-acaravello"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F8367B223F33D600766F7F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		96F83682223F33EF00766F7F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		96FE2ED6224257E300F0234F /* DoublyLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoublyLinkedList.h; sourceTree = "<group>"; };
+		96FE2ED7224257E300F0234F /* DoublyLinkedList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DoublyLinkedList.c; sourceTree = "<group>"; };
+		96FE2ED9224257F200F0234F /* CircularBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularBuffer.h; sourceTree = "<group>"; };
+		96FE2EDA224257F200F0234F /* CircularBuffer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CircularBuffer.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,10 @@
 			children = (
 				96F8367B223F33D600766F7F /* main.c */,
 				96F83682223F33EF00766F7F /* README.md */,
+				96FE2ED6224257E300F0234F /* DoublyLinkedList.h */,
+				96FE2ED7224257E300F0234F /* DoublyLinkedList.c */,
+				96FE2ED9224257F200F0234F /* CircularBuffer.h */,
+				96FE2EDA224257F200F0234F /* CircularBuffer.c */,
 			);
 			path = "lab-1-75-acaravello";
 			sourceTree = "<group>";
@@ -121,6 +131,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				96F8367C223F33D600766F7F /* main.c in Sources */,
+				96FE2EDB224257F200F0234F /* CircularBuffer.c in Sources */,
+				96FE2ED8224257E300F0234F /* DoublyLinkedList.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
