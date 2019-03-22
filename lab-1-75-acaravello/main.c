@@ -26,9 +26,13 @@ int main(int argc, const char * argv[]) {
     test_create_array_dll();
     printf("\nCompleted All Tests for Doubly Linked List\n");
     
-//    printf("Starting Tests for Circular Buffer\n\n");
-//
-//    printf("\nCompleted All Tests for Circular Buffer\n");
+    printf("Starting Tests for Circular Buffer\n\n");
+    test_create_cl();
+    test_push_cl();
+    test_pop_cl();
+    test_head_cl();
+    
+    printf("\nCompleted All Tests for Circular Buffer\n");
     
     
     

@@ -9,16 +9,6 @@
 #include <stdlib.h>
 #include "DoublyLinkedList.h"
 
-//typedef struct doubly_linked_list_node {
-//    struct doubly_linked_list_node* previous;
-//    struct doubly_linked_list_node* next;
-//    int key;
-//    int data;
-//} doubly_linked_list_node;
-//
-//typedef struct doubly_linked_list {
-//    doubly_linked_list_node* head;
-//} doubly_linked_list;
 
 int insert_dll(doubly_linked_list* list, int data, int key){
     
@@ -39,12 +29,8 @@ int insert_dll(doubly_linked_list* list, int data, int key){
 
     doubly_linked_list_node* temp = list->head;
     
-    while(1){
-        if(temp->key < key && temp->next != 0){
-            temp = temp->next;
-        } else{
-            break;
-        }
+    while(temp->key < key && temp->next != 0){
+        temp = temp->next;
     }
     if(temp->key < key){
         temp->next = node_to_insert;

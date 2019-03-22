@@ -8,6 +8,7 @@
 
 #include "tests.h"
 #include <stdlib.h>
+#include <assert.h>
 
 void test_is_in_list_dll(void){
     printf("Starting test_is_in_list_dll\n");
@@ -125,7 +126,6 @@ void test_remove_dll(void){
     assert(list->head->next->next->key == 20);
     
     assert(remove_dll(list, 20) == 20);
-    printf("Is in list: %d\n", is_in_list_dll(list, 20));
     assert(is_in_list_dll(list, 20) == 0);
     assert(list->head->key == 12);
     assert(list->head->next->key == 15);
@@ -185,27 +185,78 @@ void test_create_array_dll(void){
 }
 
 
-void test_is_in_list_cl(void){
+void test_create_cl(void){
+    printf("Starting test_create_cl\n");
+    circular_buffer* cb = create_cl(5);
+    assert(cb);
+    assert(cb->size == 5);
+    assert(cb->occupied == 0);
     
+    assert(create_cl(0) == 0);
+    assert(create_cl(-1) == 0);
+    
+    printf("Completed test_create_cl\n");
 }
 
-void test_insert_cl(void){
-    
+void test_push_cl(void){
+    printf("Starting test_push_cl\n");
+    circular_buffer* cb = create_cl(5);
+    assert(push_cl(cb, 1) == 0);
+    assert(cb->head->previous->value == 1);
+    assert(cb->tail->value = 1);
+    assert(push_cl(cb, 2) == 0);
+    assert(cb->head->previous->value == 2);
+    assert(push_cl(cb, 3) == 0);
+    assert(cb->head->previous->value == 3);
+    assert(push_cl(cb, 4) == 0);
+    assert(cb->head->previous->value == 4);
+    assert(push_cl(cb, 5) == 0);
+    assert(cb->head->previous->value == 5);
+    assert(cb->tail->value = 1);
+    assert(push_cl(cb, 6) == -1);
+    assert(cb->head->previous->value == 5);
+    printf("Completed test_create_cl\n");
 }
 
-void test_find_element_cl(void){
+void test_pop_cl(void){
+    printf("Starting test_pop_cl\n");
+    circular_buffer* cb = create_cl(5);
+    push_cl(cb, 1);
+    push_cl(cb, 2);
+    push_cl(cb, 3);
+    push_cl(cb, 4);
+    push_cl(cb, 5);
+    assert(pop_cl(cb) == 1);
+    assert(pop_cl(cb) == 2);
+    assert(pop_cl(cb) == 3);
+    assert(pop_cl(cb) == 4);
+    assert(pop_cl(cb) == 5);
+    assert(pop_cl(cb) == -1);
     
+ 
+    printf("Completed test_pop_cl\n");
 }
 
-void test_remove_cl(void){
+void test_head_cl(void){
+    printf("Starting test_head_cl\n");
+    circular_buffer* cb = create_cl(5);
+    push_cl(cb, 1);
+    assert(head_cl(cb) == 1);
+    push_cl(cb, 2);
+    push_cl(cb, 3);
+    push_cl(cb, 4);
+    push_cl(cb, 5);
+    pop_cl(cb);
+    assert(head_cl(cb) == 2);
+    pop_cl(cb);
+    assert(head_cl(cb) == 3);
+    pop_cl(cb);
+    assert(head_cl(cb) == 4);
+    pop_cl(cb);
+    assert(head_cl(cb) == 5);
+    pop_cl(cb);
+    assert(head_cl(cb) == -1);
     
-}
-
-void test_print_cl(void){
-    
-}
-
-void test_create_array_cl(void){
-    
+    printf("Completed test_head_cl\n");
 }
 

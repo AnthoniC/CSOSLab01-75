@@ -25,8 +25,8 @@ typedef struct circular_buffer{
 } circular_buffer;
 
 circular_buffer* create_cl(int size);
-int push_cl(int value);
-int pop_cl(void);
-int head_cl(void);
+int push_cl(circular_buffer* cb, int value);
+int pop_cl(circular_buffer* cb);
+int head_cl(circular_buffer* cb);
 
 #endif /* CircularBuffer_h */
