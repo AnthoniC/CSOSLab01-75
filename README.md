@@ -1,4 +1,5 @@
 # Lab 1.75 Setup
+## Lab written by Dr. Aaron Block at Austin College for the Spring 2019 Operating Systems class
 ## Objective ##
 The objective of this lab is to create two more types of data structures `doubly_linked_list` and a `circular_buffer`. Make sure to fully test this methods and data structures in your main. 
 
